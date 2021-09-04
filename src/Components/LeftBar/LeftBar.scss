@@ -1,0 +1,88 @@
+.left-bar {
+  width: 25%;
+  padding-top: 31px;
+}
+
+.left-bar-inner {
+  margin: auto;
+}
+
+.logo-link {
+}
+
+.logo {
+  margin-bottom: 51px;
+}
+
+.nav {
+  margin-bottom: 263px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 34px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.nav-icon {
+  margin-right: 20px;
+}
+
+.nav-btn {
+  border: none;
+  padding: 15px 90px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #1d9bf0;
+  border-radius: 27.5px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px 1px #1d9bf0;
+  }
+}
+
+// user part
+.user-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.user-img {
+  margin-right: 10px;
+}
+.user-inner {
+  flex-grow: 1;
+}
+.user-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+.user-mail {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}
+.dots {
+}

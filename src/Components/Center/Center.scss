@@ -1,0 +1,152 @@
+.center {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.center-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.center-top__heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.center-top__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.center-top__img {
+}
+
+// input wrapper
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.input__img {
+  margin-right: 15px;
+}
+
+.input-inner {
+  width: 100%;
+}
+
+.input {
+  margin-bottom: 53px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #828282;
+  &::placeholder {
+  }
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.input-bar-btn {
+  margin-right: 23px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.input-bar-btn-img {
+}
+
+.input-tweet-btn {
+  border: none;
+  padding: 15px 30px;
+  background: #1da1f2;
+  opacity: 0.4;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 120px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 100%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+// comment part
+.comment {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+.comment-user-img {
+  margin-right: 15px;
+}
+
+.comment-user-name {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.comment-user-email {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.comment-last-seen {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.comment-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.comment-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-bar-btn {
+  border: none;
+  background-color: transparent;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.comment-bar-span {
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+}
+
+.comment-more-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.comment-img {
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
