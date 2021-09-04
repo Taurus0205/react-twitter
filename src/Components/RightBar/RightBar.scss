@@ -1,0 +1,180 @@
+.right-bar {
+  width: 25%;
+  padding-top: 20px;
+}
+
+.search-input-wrapper {
+  padding: 15px 22px;
+  background: #eff3f4;
+  border-radius: 31px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  margin-right: 22px;
+}
+
+.search-input {
+  background: #eff3f4;
+  outline: none;
+  border: none;
+  &::placeholder {
+    background: #eff3f4;
+    font-size: 18px;
+    line-height: 24px;
+    color: #5c6c79;
+  }
+}
+
+.trends-wrapper {
+  background: #f7f9f9;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+
+.trends-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.trends-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.trends-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.trends-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.trends-info {
+}
+
+.trends-info-paragraph {
+  font-size: 16px;
+  line-height: 21px;
+  color: #393b41;
+  opacity: 0.6;
+}
+
+.trends-info-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.trends-info-qty-paragraph {
+  font-size: 16px;
+  line-height: 21px;
+  color: #393b41;
+  opacity: 0.6;
+}
+
+.trends-info-more-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.trends-show-more-btn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 100%;
+  color: #1da1f2;
+}
+
+.might-like-wrapper {
+  padding: 20px 15px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.might-like-heading {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.might-like-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.might-like-img {
+  margin-right: 13px;
+}
+
+.might-like-user-wrapper {
+  flex-grow: 1;
+}
+.might-like-user-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.might-like-user-mail {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.might-like-follow-btn {
+  cursor: pointer;
+  padding: 10px 18px;
+  border: none;
+  background: #000000;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.might-like-show-more-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 100%;
+  color: #1da1f2;
+}
+
+.footer-bar {
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+  margin-right: 15px;
+}
