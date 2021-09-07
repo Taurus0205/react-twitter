@@ -27,7 +27,7 @@ function LeftBar() {
     <>
       <div className={`left-bar ${theme}`}>
         <div className="left-bar-inner">
-          <a className="logo-link" href="#link">
+          <a className="logo-link" href="index.html">
             <img
               className="logo"
               src={Logo}
@@ -40,7 +40,7 @@ function LeftBar() {
           <nav className="nav">
             <ul className="nav-list">
               <li className="nav-item ">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Home}
@@ -53,7 +53,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Explore}
@@ -66,7 +66,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Notification}
@@ -79,7 +79,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Messages}
@@ -92,7 +92,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Bookmarks}
@@ -105,7 +105,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Lists}
@@ -118,7 +118,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={Profile}
@@ -131,7 +131,7 @@ function LeftBar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#link">
+                <a className="nav-link" href="index.html">
                   <img
                     className="nav-icon"
                     src={More}
