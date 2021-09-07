@@ -1,6 +1,7 @@
 .right-bar {
   width: 25%;
   padding-top: 20px;
+  padding-right: 20px;
 }
 
 .search-input-wrapper {
@@ -44,6 +45,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
+  color: #000000;
 }
 
 .trends-btn {
@@ -73,6 +75,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
+  color: #000000;
 }
 
 .trends-info-qty-paragraph {
@@ -111,6 +114,7 @@
   margin-bottom: 25px;
   font-size: 24px;
   line-height: 32px;
+  color: #000000;
 }
 
 .might-like-inner {
@@ -130,6 +134,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
 }
 
 .might-like-user-mail {
@@ -175,6 +180,6 @@
 .footer-item {
   font-size: 16px;
   line-height: 21px;
-  color: #536471;
+  // color: #536471;
   margin-right: 15px;
 }

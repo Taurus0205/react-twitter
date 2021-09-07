@@ -1,4 +1,11 @@
+import React from "react";
 import "./LeftBar.scss";
+
+// theme
+import useTheme from "../../Hooks/Theme";
+// lang
+import content from "../../Localization/Content";
+import { LangContext } from "../../Context/Lang";
 
 // images
 import Logo from "../../Assests/Images/logo.svg";
@@ -14,11 +21,13 @@ import User from "../../Assests/Images/user.svg";
 import Dots from "../../Assests/Images/triple-dots.svg";
 
 function LeftBar() {
+  const [theme] = useTheme();
+  const { lang } = React.useContext(LangContext);
   return (
     <>
-      <div className="left-bar">
+      <div className={`left-bar ${theme}`}>
         <div className="left-bar-inner">
-          <a className="logo-link" href="#">
+          <a className="logo-link" href="#link">
             <img
               className="logo"
               src={Logo}
@@ -30,8 +39,8 @@ function LeftBar() {
 
           <nav className="nav">
             <ul className="nav-list">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li className="nav-item ">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Home}
@@ -39,12 +48,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Home
+                  {content[lang].home}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Explore}
@@ -52,12 +61,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Explore
+                  {content[lang].explore}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Notification}
@@ -65,12 +74,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Notification
+                  {content[lang].notification}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Messages}
@@ -78,12 +87,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Messages
+                  {content[lang].messages}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Bookmarks}
@@ -91,12 +100,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Bookmarks
+                  {content[lang].bookmarks}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Lists}
@@ -104,12 +113,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Lists
+                  {content[lang].lists}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={Profile}
@@ -117,12 +126,12 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  Profile
+                  {content[lang].profile}
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#link">
                   <img
                     className="nav-icon"
                     src={More}
@@ -130,7 +139,7 @@ function LeftBar() {
                     width={28}
                     height={28}
                   />
-                  More
+                  {content[lang].more}
                 </a>
               </li>
 

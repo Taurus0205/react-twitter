@@ -1,4 +1,9 @@
+import React from "react";
 import "./Center.scss";
+import useTheme from "../../Hooks/Theme";
+import { LangContext } from "../../Context/Lang";
+import content from "../../Localization/Content";
+
 import Light from "../../Assests/Images/light.svg";
 import User from "../../Assests/Images/user.svg";
 import Designsta from "../../Assests/Images/designsta.svg";
@@ -22,26 +27,50 @@ import Share from "../../Assests/Btn-icons/share.svg";
 import Statistics from "../../Assests/Btn-icons/statistics.svg";
 
 function Center() {
+  const [theme, setTheme] = useTheme();
+  const { lang, setLang } = React.useContext(LangContext);
+
   return (
     <>
-      <div className="center ">
+      <div className={`center ${theme}`}>
         <div className="center-top">
-          <h2 className="center-top__heading">Home</h2>
+          <h2 className="center-top__heading ">{content[lang].home}</h2>
           <button className="center-top__btn">
             <img
-              className="center-top__img"
+              className="center-top__imgy"
               src={Light}
               alt="light dark button"
               width={24}
               height={24}
             />
           </button>
+          <select
+            className="select"
+            value={theme}
+            onChange={(evt) => {
+              setTheme(evt.target.value);
+            }}
+          >
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+          </select>
+
+          <select
+            className="select"
+            value={lang}
+            onChange={(evt) => {
+              setLang(evt.target.value);
+            }}
+          >
+            <option value="eng">eng</option>
+            <option value="ru">ru</option>
+          </select>
         </div>
 
         {/* input part */}
         <div className="input-wrapper">
           <img
-            className="input__img"
+            className="input__imgy"
             src={User}
             alt="user"
             width={60}
@@ -51,16 +80,16 @@ function Center() {
             <input
               className="input"
               type="text"
-              placeholder="What's happening"
+              placeholder={content[lang].whatsup}
             />
 
             <div className="input-bar">
               <div className="input-bar__btn-wrapper">
                 <button className="input-bar-btn">
                   <img
-                    className="input-bar-btn-img"
+                    className="input-bar-btn-imgy"
                     src={Image}
-                    alt="send photo"
+                    alt="send"
                     width={24}
                     height={24}
                   />
@@ -68,7 +97,7 @@ function Center() {
 
                 <button className="input-bar-btn">
                   <img
-                    className="input-bar-btn-img"
+                    className="input-bar-btn-imgy"
                     src={Gif}
                     alt="send gif"
                     width={24}
@@ -78,7 +107,7 @@ function Center() {
 
                 <button className="input-bar-btn">
                   <img
-                    className="input-bar-btn-img"
+                    className="input-bar-btn-imgy"
                     src={Stats}
                     alt="statistics"
                     width={24}
@@ -88,7 +117,7 @@ function Center() {
 
                 <button className="input-bar-btn">
                   <img
-                    className="input-bar-btn-img"
+                    className="input-bar-btn-imgy"
                     src={Smile}
                     alt="emoticons"
                     width={24}
@@ -98,7 +127,7 @@ function Center() {
 
                 <button className="input-bar-btn">
                   <img
-                    className="input-bar-btn-img"
+                    className="input-bar-btn-imgy"
                     src={Date}
                     alt="date"
                     width={24}
@@ -114,7 +143,7 @@ function Center() {
         {/* commnets part */}
         <div className="comment">
           <img
-            className="comment-user-img"
+            className="comment-user-imgy"
             src={Designsta}
             alt="designsta"
             width={60}
@@ -170,7 +199,7 @@ function Center() {
         {/* second comment */}
         <div className="comment">
           <img
-            className="comment-user-img"
+            className="comment-user-imgy"
             src={Cloutex}
             alt="Cloutex"
             width={60}
@@ -227,7 +256,7 @@ function Center() {
         {/* third comment */}
         <div className="comment">
           <img
-            className="comment-user-img"
+            className="comment-user-imgy"
             src={Creative}
             alt="Creative"
             width={60}
@@ -241,7 +270,7 @@ function Center() {
             </p>
             <p className="comment-paragraph">Обетда..... Кечиринглар</p>
             <img
-              className="comment-img"
+              className="comment-imgy"
               src={Lunch}
               alt="lunch"
               width={679}

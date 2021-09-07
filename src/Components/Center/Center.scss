@@ -6,7 +6,6 @@
 .center-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 0;
 }
 
@@ -14,7 +13,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  color: #000000;
+  flex-grow: 1;
 }
 
 .center-top__btn {
@@ -22,9 +21,16 @@
   background-color: transparent;
 }
 
-.center-top__img {
+.center-top__imgy {
+  margin-right: 10px;
 }
 
+// select
+.select {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
 // input wrapper
 .input-wrapper {
   width: 100%;
@@ -32,7 +38,7 @@
   align-items: flex-start;
 }
 
-.input__img {
+.input__imgy {
   margin-right: 15px;
 }
 
@@ -41,12 +47,20 @@
 }
 
 .input {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
   margin-bottom: 53px;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 29px;
-  color: #828282;
+
   &::placeholder {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #828282;
+    font-weight: lighter;
   }
 }
 
@@ -58,13 +72,15 @@
 }
 
 .input-bar-btn {
+  padding: 2px;
+  border-radius: 5px;
   margin-right: 23px;
   border: none;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
 }
 
-.input-bar-btn-img {
+.input-bar-btn-imgy {
 }
 
 .input-tweet-btn {
@@ -89,7 +105,7 @@
   padding-bottom: 22px;
 }
 
-.comment-user-img {
+.comment-user-imgy {
   margin-right: 15px;
 }
 
@@ -98,20 +114,17 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
-  color: #000000;
 }
 
 .comment-user-email {
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   opacity: 0.6;
 }
 
 .comment-last-seen {
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   opacity: 0.6;
 }
 
@@ -119,6 +132,9 @@
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 25px;
+  width: 100%;
+  max-width: 700px;
+  flex-grow: 1;
 }
 
 .comment-bar {
@@ -129,24 +145,29 @@
 
 .comment-bar-btn {
   border: none;
-  background-color: transparent;
+  background-color: white;
   margin-right: 12px;
+  padding: 3px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 .comment-bar-span {
   font-size: 16px;
   line-height: 21px;
-  color: #536471;
+  // color: #536471;
 }
 
 .comment-more-btn {
   border: none;
-  background-color: transparent;
   cursor: pointer;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-left: auto;
+  background-color: white;
 }
 
-.comment-img {
+.comment-imgy {
   border-radius: 20px;
   margin-bottom: 25px;
 }

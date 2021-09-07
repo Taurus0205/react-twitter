@@ -1,4 +1,6 @@
+import React from "react";
 import "./App.scss";
+
 import LeftBar from "./Components/LeftBar/LeftBar";
 import Center from "./Components/Center/Center";
 import RightBar from "./Components/RightBar/RightBar";

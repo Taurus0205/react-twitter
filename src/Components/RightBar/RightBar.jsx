@@ -1,4 +1,11 @@
+import React from "react";
 import "./RightBar.scss";
+
+// theme
+import useTheme from "../../Hooks/Theme";
+// language
+import { LangContext } from "../../Context/Lang";
+import content from "../../Localization/Content";
 
 import Search from "../../Assests/Images/search.svg";
 import Settings from "../../Assests/Images/settings.svg";
@@ -8,9 +15,12 @@ import Mushtariy from "../../Assests/Images/mushtariy.svg";
 import Shuhrat from "../../Assests/Images/shuhrat.svg";
 
 function RightBar() {
+  const [theme] = useTheme();
+  const { lang } = React.useContext(LangContext);
+
   return (
     <>
-      <div className="right-bar">
+      <div className={`right-bar ${theme}`}>
         <div className="search-input-wrapper">
           <img
             className="search-icon"
@@ -22,13 +32,13 @@ function RightBar() {
           <input
             className="search-input"
             type="text"
-            placeholder="Search Twitter"
+            placeholder={content[lang].search}
           />
         </div>
 
         <div className="trends-wrapper">
           <div className="trends-top-wrapper">
-            <h3 className="trends-heading">Trends for you</h3>
+            <h3 className="trends-heading">{content[lang].trend}</h3>
             <button className="trends-btn">
               <img
                 className="trends-img"
@@ -79,11 +89,13 @@ function RightBar() {
             </button>
           </div>
 
-          <button className="trends-show-more-btn">Show more</button>
+          <button className="trends-show-more-btn">
+            {content[lang].showmore}
+          </button>
         </div>
 
         <div className="might-like-wrapper">
-          <h3 className="might-like-heading">You might like</h3>
+          <h3 className="might-like-heading">{content[lang].like}</h3>
 
           <div className="might-like-inner">
             <img
@@ -99,7 +111,9 @@ function RightBar() {
               <p className="might-like-user-mail">@Mushtar565266</p>
             </div>
 
-            <button className="might-like-follow-btn">Follow</button>
+            <button className="might-like-follow-btn">
+              {content[lang].follow}
+            </button>
           </div>
 
           <div className="might-like-inner">
@@ -116,20 +130,24 @@ function RightBar() {
               <p className="might-like-user-mail">@mrshukhrat</p>
             </div>
 
-            <button className="might-like-follow-btn">Follow</button>
+            <button className="might-like-follow-btn">
+              {content[lang].follow}
+            </button>
           </div>
 
-          <button className="might-like-show-more-btn">Show more</button>
+          <button className="might-like-show-more-btn">
+            {content[lang].showmore}
+          </button>
         </div>
 
         <div className="footer-bar">
           <ul className="footer-list">
-            <li className="footer-item">Terms of Service</li>
-            <li className="footer-item">Privacy Policy</li>
-            <li className="footer-item">Cookie Policy</li>
-            <li className="footer-item">Imprint</li>
-            <li className="footer-item">Ads Info</li>
-            <li className="footer-item">More ···</li>
+            <li className="footer-item">{content[lang].terms}</li>
+            <li className="footer-item">{content[lang].policy}</li>
+            <li className="footer-item">{content[lang].cookie}</li>
+            <li className="footer-item">{content[lang].imprint}</li>
+            <li className="footer-item">{content[lang].ads}</li>
+            <li className="footer-item">{content[lang].more} ···</li>
             <li className="footer-item">© 2021 Twitter, Inc.</li>
           </ul>
         </div>

@@ -42,6 +42,16 @@ img {
   display: flex;
 }
 
+.dark {
+  background-color: rgb(129, 125, 146);
+  color: white;
+}
+
+.light {
+  color: #333333;
+  background-color: white;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
